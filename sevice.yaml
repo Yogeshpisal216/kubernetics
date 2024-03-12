@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: yogi-app-service
+  namespace: frontend
+spec:
+  type: ClusterIP
+  ports:
+    - name: httpd
+      port: 80
+  selector: 
+    app: my-app
