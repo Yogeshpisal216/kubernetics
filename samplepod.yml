@@ -15,4 +15,4 @@ spec:
       env: 
         - name: "MYSQL_ROOT_PASSWORD"
           valueFrom:
-            
+            secretK
