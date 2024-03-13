@@ -13,4 +13,5 @@ spec:
           protocol: TCP
           containerPort: 80
       env: 
-        
+        - name: "MYSQL_ROOT_PASSWORD"
+          
