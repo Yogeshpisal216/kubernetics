@@ -1,7 +1,7 @@
-apiVersion: v1 
-kind: Pod 
+apiVersion: v1
+kind: Pod
 metadata:
-  name: my-app
+  name: joker-app
   labels:
     app: yogi-app
 spec:
@@ -9,17 +9,17 @@ spec:
     - name: http-container
       image: httpd
       ports:
-        - name: http 
+        - name: http
           protocol: TCP
           containerPort: 80
-      env: 
-        - name: "MYSQL_ROOT_PASSWORD"
-          valueFrom:
-            secretKeyRef:
-              name: my-s
-              key: DB_PASS
-        - name: "MYSQL_USER"
-          valueFrom:
-            configMapRef:
-              name: my-cv
-              key: USER 
+      env:
+      - name: "MYSQL_ROOT_PASSWORD"
+        valueFrom:
+          secretKeyRef:
+            name: my-s
+            key: DB_PASS
+      - name: "MYSQL_USER"
+        valueFrom:
+          configMapKeyRef:
+            name: my-var
+            key: USER
