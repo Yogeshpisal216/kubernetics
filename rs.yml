@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: ReplicationSet
+metadata:
+  name: my-rc
+  labels:
+    app: yogesh-app
+spec:
+  template:
+    metadata:
+      name: my-app
+      labels: 
+        app: yogi-app
+      namespace: frontend
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx 
+          ports:
+            - name: nginx
+              protocol: TCP
+              containerPort: 123
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: yogi-app
+
+  # selector:
+  #   matchExpression:
+  #     - {key: "app", operator: "In", values: ["yogi-app", "yogesh-app"]}
