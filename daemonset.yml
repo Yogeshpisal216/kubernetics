@@ -7,7 +7,7 @@ metadata:
 spec: 
   template:
     metadata:
-      name: my-app
+      name: yogi-app
       labels: 
         app: yogi-app
     spec:
