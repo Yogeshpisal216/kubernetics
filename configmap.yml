@@ -5,4 +5,4 @@ metadata:
 data:
   USER: "linux"
   PASS: 123
-  DB: 
+  DB: "studentapp"
