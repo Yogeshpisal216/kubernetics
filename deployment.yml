@@ -25,5 +25,5 @@ spec:
     matchLabels:
       app: yogi-app
   strategy:
-    type: canary
+    type: RollingUpdate
           
