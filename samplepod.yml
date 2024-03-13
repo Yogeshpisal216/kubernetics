@@ -18,3 +18,4 @@ spec:
             secretKeyRef:
               name: my-s
               key: DB_PASS
+        - name:
