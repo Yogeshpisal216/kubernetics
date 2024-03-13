@@ -3,4 +3,6 @@ kind: Pod
 metadata:
   name: my-app
   labels:
-    app:
+    app: yogi-app
+spec:
+  
