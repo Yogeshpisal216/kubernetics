@@ -11,7 +11,7 @@ spec:
         labels: 
           app: yogi-app
         namespace: frontend
-      spec:
+    spec:
         containers:
           - name: nginx-container
             image: nginx 
