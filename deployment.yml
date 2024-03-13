@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: yogi-app
+  namespace: frontend
+spec:
+  template:
+      metadata:
+        name: my-app
+        labels: 
+          app: yogi-app
+        namespace: frontend
+      spec:
+        containers:
+          - name: nginx-container
+            image: nginx 
+            ports:
+              - name: nginx
+                protocol: TCP
+                containerPort: 80
+  replicas: 2
+  selector:
+    matchLabels:
+      app: yogi-app
+  strategy:
+    type: canary
+          
