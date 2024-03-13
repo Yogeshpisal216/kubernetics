@@ -27,4 +27,3 @@ spec:
   strategy:
     type: RollingUpdate
           
-Github@karad123
