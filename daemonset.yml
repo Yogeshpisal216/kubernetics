@@ -19,7 +19,8 @@ spec:
               protocol: TCP
               containerPort: 2049
           env:
-            name: ""
+            name: "MYSQL_ROOT_PASSWORD"
+            
   replicas: 2
   selector: 
     matchLabels:
