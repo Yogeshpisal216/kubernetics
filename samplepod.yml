@@ -20,4 +20,5 @@ spec:
               key: DB_PASS
         - name: "MYSQL_USER"
           valueFrom:
-            
+            configMapRef:
+            name
