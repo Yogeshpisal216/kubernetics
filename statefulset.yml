@@ -20,7 +20,7 @@ spec:
               containerPort: 2049
           env:
             name: "MYSQL_ROOT_PASSWORD"
-            values: 
+            values: 123
   replicas: 2
   selector: 
     matchLabels:
