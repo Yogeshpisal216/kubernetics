@@ -22,4 +22,4 @@ spec:
           valueFrom:
             configMapRef:
               name: my-cv
-              key:
+              key: user
