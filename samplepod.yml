@@ -9,4 +9,5 @@ spec:
     - name: http-container
       image: httpd
       ports:
-        - 
+        - name: http 
+          
