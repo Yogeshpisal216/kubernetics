@@ -18,6 +18,7 @@ spec:
             - name: nginx
               protocol: TCP
               containerPort: 2049
+          env
   replicas: 2
   selector: 
     matchLabels:
