@@ -21,4 +21,5 @@ spec:
         - name: "MYSQL_USER"
           valueFrom:
             configMapRef:
-            name
+              name:
+              
