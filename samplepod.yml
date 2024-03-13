@@ -8,4 +8,5 @@ spec:
   containers:
     - name: http-container
       image: httpd
-      
+      ports:
+        - 
