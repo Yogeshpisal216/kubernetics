@@ -7,9 +7,9 @@ metadata:
 spec:
   template:
     metadata:
-      name: home-app
+      name: mobile-app
       labels:
-        app: home-app
+        app: mobile-app
     spec:
       containers:
         - name: home-app
