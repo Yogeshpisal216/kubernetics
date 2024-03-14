@@ -12,8 +12,8 @@ spec:
         app: cloth-app
     spec:
       containers:
-        - name: home-app
-          image: yogi2112/kube-proj:home
+        - name: cloth-app
+          image: yogi2112/kube-proj:cloth
           ports:
             - name: http
               protocol: TCP
