@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: home-app
+  labels:
+    app: home-app
+spec:
+  template:
+    metadata:
+      name: home-app
+      labels:
+        app: home-app
+    spec:
+      containers:
+        - name: home-app
+          image: yogi2112/kube-proj:home
+          ports:
+            - name: http
+              protocol: TCP
+              containerPort: 80
+  replicas: 2
+  selector:
+    matchLabels:
+      app: home-app
+  strategy:
+    type: RollingUpdate
