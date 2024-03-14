@@ -3,7 +3,7 @@ kind: Deployment
 metadata: 
   name: mobile-app
   labels:
-    app: home-app
+    app: mobile-app
 spec:
   template:
     metadata:
