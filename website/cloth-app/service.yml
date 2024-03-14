@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: home-app
+  name: cloth-app
   labels: 
     name: home-app
 spec:
