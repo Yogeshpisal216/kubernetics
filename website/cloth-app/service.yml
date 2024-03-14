@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: cloth-app
   labels: 
-    name: home-app
+    name: cloth-app
 spec:
   type: ClusterIP
   ports:
