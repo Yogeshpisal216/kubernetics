@@ -12,7 +12,7 @@ spec:
         app: mobile-app
     spec:
       containers:
-        - name: home-app
+        - name: mobile-app
           image: yogi2112/kube-proj:home
           ports:
             - name: http
