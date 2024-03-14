@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mobile-app
   labels: 
-    name: home-app
+    name: mobile-app
 spec:
   type: ClusterIP
   ports:
